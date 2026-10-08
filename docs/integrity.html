@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Integrity Policy — Undersigned</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: #0A0A0E;
+            color: #E0E0E0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #0A0A0E 100%);
+            border-bottom: 2px solid #9945FF;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            color: #14F195;
+            font-size: 2.5rem;
+            margin-bottom: 0.25rem;
+            letter-spacing: 1px;
+        }
+        header p {
+            color: #9945FF;
+            font-size: 1.1rem;
+        }
+        nav {
+            background-color: #111118;
+            padding: 0.75rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #222;
+        }
+        nav a {
+            color: #9945FF;
+            text-decoration: none;
+            margin: 0 0.75rem;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        nav a:hover { color: #14F195; }
+        nav a.active { color: #14F195; }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        h2 {
+            color: #14F195;
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #222;
+        }
+        h3 {
+            color: #9945FF;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #E0E0E0;
+        }
+        ul, ol {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            color: #E0E0E0;
+        }
+        .highlight {
+            background-color: #111118;
+            border-left: 3px solid #14F195;
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .highlight p { margin-bottom: 0; }
+        .warning {
+            background-color: #111118;
+            border-left: 3px solid #ff6b6b;
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .warning p { margin-bottom: 0; }
+        .updated {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        footer {
+            border-top: 1px solid #222;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            color: #666;
+            font-size: 0.85rem;
+            margin-top: 3rem;
+        }
+        footer a {
+            color: #9945FF;
+            text-decoration: none;
+        }
+        footer a:hover { color: #14F195; }
+        a { color: #9945FF; text-decoration: none; }
+        a:hover { color: #14F195; }
+    </style>
+    <meta name="description" content="Terms of Service / End-User License Agreement (EULA) for Undersigned. The legally binding agreement that governs use of the application.">
+</head>
+<body>
+    <header>
+        <h1>Review Integrity Policy</h1>
+        <p>How reviews on Undersigned are collected, checked and counted</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="copyright.html">Copyright</a>
+        <a href="license.html">License</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="sanctions.html">Sanctions</a>
+        <a href="integrity.html" class="active">Review integrity</a>
+    </nav>
+    <main>
+        <h2>Review Integrity Policy</h2>
+        <p class="updated">Last updated: 9 October 2026</p>
+
+        <p>Undersigned shows reviews of Solana dApp Store apps that Seeker owners sign on-chain, beside the store's own rating. This page says, in one place, how a review gets in, what is checked, what is counted and what is only shown. Every rule here is in the App's open source and runs the same way in the App, on the website and in the API, so anyone reading the public ledger reaches the same scores.</p>
+
+        <h3>1. How reviews are collected</h3>
+        <ul>
+            <li><strong>Anyone can sign one; signing is free.</strong> A review is a memo transaction the reviewer signs in their own wallet. The only cost is the Solana network fee their wallet sets, which goes to the network. Undersigned charges nothing for reviewing.</li>
+            <li><strong>Nothing is offered for a review.</strong> Undersigned never pays, discounts or gives anything for writing a review, for a particular rating, or for changing one, and never asks only satisfied users to review.</li>
+            <li><strong>Every review is shown, good or bad.</strong> Low ratings and critical text are shown exactly like high ones. Nothing is held back for its rating or opinion. The only text that is not shown is described in section 5, and even then the rating still counts.</li>
+            <li><strong>The author alone can withdraw it.</strong> A withdrawal from the same wallet stops the review being counted or shown. Nobody else, including Undersigned, can withdraw someone's review. The on-chain record itself is permanent.</li>
+        </ul>
+
+        <h3>2. What is checked before a review counts</h3>
+        <ul>
+            <li><strong>One device, one voice.</strong> A review counts only if the signing wallet holds a Seeker Genesis Token, read on-chain. There is one Genesis Token per Seeker.</li>
+            <li><strong>One review per wallet per app.</strong> If a wallet signs several, the newest is the one counted.</li>
+            <li><strong>No marking your own work.</strong> A review signed by a wallet proven to publish the app is shown and labelled, and counted in no score. A publisher is proven by the build the dApp Store serves or by a file on the website the store lists.</li>
+            <li><strong>Undersigned's own wallets count nowhere.</strong> Reviews, flags, clears and helpful votes from the wallets Undersigned's operator controls are shown, labelled "Undersigned operator", and counted in no score, flag or vote. Those wallets are listed in the source code (<code>Operator.WALLETS</code>). Where Undersigned's operator publishes the reviewed app, the app's page says so.</li>
+            <li><strong>No gifted reviewers.</strong> A reviewer holding a Pro seat given by the reviewed app's own publisher has received something of value from that publisher. Their review of that publisher's apps is shown, labelled "Pro from this app's publisher", and counted in no score.</li>
+        </ul>
+
+        <h3>3. How a counted review is weighted</h3>
+        <p>A counted review's weight is its device weight multiplied by its quality. Payment to Undersigned is not part of either.</p>
+        <ul>
+            <li><strong>Device weight:</strong> 1 for a wallet holding a Genesis Token, raised by SKR the wallet has staked, read on-chain: 1 + ln(1 + staked SKR / 1,000), capped at 3. SKR is traded, so this part of the weight can be acquired; Undersigned does not recommend buying, selling or staking it.</li>
+            <li><strong>Quality:</strong> 0.5 for stars and tags alone; +0.25 when the review carries what the phone saw (how long the app has been installed, or how long it has been used); +0.25 for a written note of six or more words. Halved for a wallet with a review hidden by community consensus. Never below 0.25.</li>
+            <li><strong>The signed score</strong> is the weighted average of counted reviews. For ranking only, a few reviews are pulled toward 3.0 until more Seekers sign, and the page says so.</li>
+        </ul>
+
+        <h3>4. How reviews are shown: five headings</h3>
+        <ul>
+            <li><strong>Organic reviews:</strong> counted Seeker owners with no tie to Undersigned or to the app's publisher.</li>
+            <li><strong>Pro members:</strong> reviewers who pay Undersigned for the optional Pro licence. Their reviews count at exactly the same weight as everyone's, carry a "Pro member" mark, and also appear in a separately labelled "Pro members" score with its own count. Pro buys tools; it never raises a review's weight or the signed score.</li>
+            <li><strong>Promoted reviews · paid:</strong> reviews their own author paid Undersigned to promote. They count once, at exactly the same weight as everyone's, carry a "Promoted · paid" mark, sit in their own shaded section placed <em>after</em> the organic reviews (never first), and also appear in a separately labelled "Promoted" score with its own count. Only the review's author can promote it, only while holding Pro, and only once per review. Promotion is refused to any wallet proven to publish an app, to Undersigned's own wallets, to holders of a Pro seat gifted by the app's publisher, and on every app Undersigned's operator publishes. The buyer confirms they are not paid by, employed by or acting for the app's publisher or a competitor; a promotion bought on a publisher's behalf breaks this policy and is withdrawn when found.</li>
+            <li><strong>Related to Undersigned or the publisher:</strong> Undersigned's own wallets, and reviewers holding Pro gifted by the app's publisher. Shown, labelled, counted in no score.</li>
+            <li><strong>Not counted:</strong> wallets without a Genesis Token, and a publisher's review of its own app. Folded away by default, still public.</li>
+        </ul>
+        <p>The dApp Store's own star rating is shown beside the signed score, unchanged and labelled as the store's. Undersigned does not edit, filter or re-weight it.</p>
+
+        <h3>5. Flags, consensus and moderation</h3>
+        <ul>
+            <li><strong>Community flags.</strong> Any counted Seeker owner can flag a review as spam, abuse, off-topic or misleading, or sign "looks genuine" against a flag. A review is hidden by consensus when the net flag weight reaches 2.0 from at least two different counted wallets; after the author disputes, 4.0 from at least three. Flags from the app's proven publisher and from Undersigned's own wallets are ignored. Every step can be undone on-chain.</li>
+            <li><strong>Moderation hides text, never a voice.</strong> A moderator can hide a review's or reply's words for four reasons only: illegal content, someone's personal data, abuse or harassment aimed at a person, or impersonating a publisher. The rating, tags and weight still count. Each hide is a public on-chain record with its reason; the author can dispute it and is answered within 7 days. A low rating, a harsh opinion or criticism of an app is never a reason.</li>
+            <li><strong>Who moderates.</strong> Today the only moderator is Undersigned's operator, who also publishes apps in the store. The operator's wallets cannot moderate reviews of any app the operator publishes, on-chain or on the website.</li>
+            <li><strong>Every hide is public.</strong> All moderation records, and anything the website does not serve, are listed with their reason at <a href="https://undersigned.provenby.dev/moderation">undersigned.provenby.dev/moderation</a>.</li>
+        </ul>
+
+        <h3>6. Timing facts, not verdicts</h3>
+        <p>Undersigned marks unusual bursts of signed reviews or store ratings, and copy-pasted text across reviews. These are facts about timing and wording, shown for readers to weigh. They never remove a review from a score and are not a finding that any review is fake.</p>
+
+        <h3>7. Reporting a problem</h3>
+        <p>To report a review you think breaks this policy, flag it in the App, or write to <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a> with the record id. We reply within 7 days. Changes to this policy are dated at the top of this page and released with the App's source.</p>
+    </main>
+
+<footer>
+        <p>&copy; 2026 ADappvark. All rights reserved.</p>
+        <p>Contact: <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a></p>
+        <p>Last updated: 9 October 2026</p>
+    </footer>
+</body>
+</html>
