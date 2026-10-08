@@ -152,9 +152,10 @@
         </ul>
 
         <h3>3. How a counted review is weighted</h3>
-        <p>A counted review's weight is its device weight multiplied by its quality. Payment to Undersigned is not part of either.</p>
+        <p>A counted review's weight is its device weight multiplied by its quality. No payment and no token balance is part of either.</p>
         <ul>
-            <li><strong>Device weight:</strong> 1 for a wallet holding a Genesis Token, raised by SKR the wallet has staked, read on-chain: 1 + ln(1 + staked SKR / 1,000), capped at 3. SKR is traded, so this part of the weight can be acquired; Undersigned does not recommend buying, selling or staking it.</li>
+            <li><strong>Device weight:</strong> 1 for every wallet holding a Genesis Token: one device, one voice. No payment and no token balance changes it.</li>
+            <li><strong>Stake, shown, never weighed:</strong> beside each review, the SKR and SOL its wallet had staked, as first read after the review appeared, with the date it was read. It is there so you can judge the reviewer yourself; it never changes a weight, a score, a flag or a vote. Undersigned does not recommend buying, selling or staking any token.</li>
             <li><strong>Quality:</strong> 0.5 for stars and tags alone; +0.25 when the review carries what the phone saw (how long the app has been installed, or how long it has been used); +0.25 for a written note of six or more words. Halved for a wallet with a review hidden by community consensus. Never below 0.25.</li>
             <li><strong>The signed score</strong> is the weighted average of counted reviews. For ranking only, a few reviews are pulled toward 3.0 until more Seekers sign, and the page says so.</li>
         </ul>
@@ -171,7 +172,7 @@
 
         <h3>5. Flags, consensus and moderation</h3>
         <ul>
-            <li><strong>Community flags.</strong> Any counted Seeker owner can flag a review as spam, abuse, off-topic or misleading, or sign "looks genuine" against a flag. A review is hidden by consensus when the net flag weight reaches 2.0 from at least two different counted wallets; after the author disputes, 4.0 from at least three. Flags from the app's proven publisher and from Undersigned's own wallets are ignored. Every step can be undone on-chain.</li>
+            <li><strong>Community flags.</strong> Any counted Seeker owner can flag a review as spam, abuse, off-topic or misleading, or sign "looks genuine" against a flag. A review is hidden by consensus when at least two different counted wallets flag it (net of "looks genuine" votes; every counted wallet counts once); after the author disputes, at least four. Flags from the app's proven publisher and from Undersigned's own wallets are ignored. Every step can be undone on-chain.</li>
             <li><strong>Moderation hides text, never a voice.</strong> A moderator can hide a review's or reply's words for four reasons only: illegal content, someone's personal data, abuse or harassment aimed at a person, or impersonating a publisher. The rating, tags and weight still count. Each hide is a public on-chain record with its reason; the author can dispute it and is answered within 7 days. A low rating, a harsh opinion or criticism of an app is never a reason.</li>
             <li><strong>Who moderates.</strong> Today the only moderator is Undersigned's operator, who also publishes apps in the store. The operator's wallets cannot moderate reviews of any app the operator publishes, on-chain or on the website.</li>
             <li><strong>Every hide is public.</strong> All moderation records, and anything the website does not serve, are listed with their reason at <a href="https://undersigned.provenby.dev/moderation">undersigned.provenby.dev/moderation</a>.</li>
