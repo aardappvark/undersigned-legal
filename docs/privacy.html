@@ -119,7 +119,7 @@
     </nav>
     <main>
         <h2>Privacy Policy</h2>
-        <p class="updated">Last updated: 7 October 2026</p>
+        <p class="updated">Last updated: 9 October 2026</p>
 
         <h3>1. Introduction</h3>
         <p>Undersigned ("the App") is developed by MidMightBit Games, trading as ADappvark ("we", "us"). This policy explains what the App does and does not do with data. The short version: there is no account, no analytics, no advertising and no server of ours in the loop. The App talks to public blockchain infrastructure and the Solana dApp Store's own public feed directly from your device.</p>
@@ -281,12 +281,19 @@ no cookies, uses no advertising identifier, no device fingerprinting and no thir
 and does not read information stored on your device for any purpose other than running the App.</p>
 
 <h3>Suggested translations and other AI suggestions</h3>
-<p>When a Pro member taps <strong>Suggested translation</strong>, the App sends Undersigned's server the review's or reply's record id, your App language and your wallet address (to check Pro on the public ledger). As with any web request, your IP address reaches the server. Nothing else is sent, and nothing is stored about you beyond ordinary server logs.</p>
-<p>To make a suggested translation, a suggested summary of an app's reviews, a suggested note about an app update, or an answer from the developer docs helper, the server sends the relevant <em>public</em> text (review and reply text already public on the Solana blockchain, store release notes, our published docs, or a developer's question) to Anthropic, which runs the Claude model, and stores the answer so the same text is not sent again. Your wallet address and IP address are not sent to Anthropic. Every such output is labelled a suggestion made by AI, and none of it changes a review, a weight or a score.</p>
+<p>The App sends Undersigned's server data for AI suggestions only when you ask for one, or, for Pro members with alerts on, once a week for the digest:</p>
+<ul>
+<li><strong>Suggested translation</strong> (Pro): the review's or reply's record id, or the text of a dApp Store review shown on screen, your App language and your wallet address (to check Pro on the public ledger).</li>
+<li><strong>Translate my reply</strong> (Pro publishers): the reply you have drafted but not yet signed, the id of the review it answers, and your wallet address. The draft is not public until you sign it.</li>
+<li><strong>Ask how scoring works</strong> (anyone): the question you type and your App language. No wallet address is sent.</li>
+<li><strong>Weekly digest</strong> (Pro, with alerts on): your wallet address, once a week, to check Pro and fetch the digest.</li>
+</ul>
+<p>As with any web request, your IP address reaches the server. Nothing else is sent, and nothing is stored about you beyond ordinary server logs. Don't put personal details in a question or a reply draft.</p>
+<p>To make a suggested translation, a suggested summary of an app's reviews, a suggested note about an app update, the weekly digest, or an answer about how scoring works or from the developer docs helper, the server sends the relevant text (review and reply text already public on the Solana blockchain or in the dApp Store, store release notes, our published policy and docs, a reply draft you asked us to translate, or the question you typed) to Anthropic, which runs the Claude model, and stores the answer so the same text is not sent again. Some of this is first tried on an open model running on our own server, in which case it leaves no one's hands but ours. Your wallet address and IP address are not sent to Anthropic. Every such output is labelled a suggestion made by AI, and none of it changes a review, a weight or a score.</p>
 
 <h3>Transfers outside the EEA</h3>
 <p>We are established in Australia, which is not the subject of an adequacy decision under Article 45.
-The App sends us data only when a Pro member asks for a suggested translation (the record id, the App language and the wallet address, above). Public text sent to make AI suggestions goes to Anthropic, established in the United States, which processes it for us under its commercial terms; it carries no wallet address or IP address. The RPC providers, the dApp Store's
+The App sends us data only for the AI suggestions listed above, when you ask for one or for the Pro weekly digest. Text sent to make AI suggestions goes to Anthropic, established in the United States, which processes it for us under its commercial terms; it carries no wallet address or IP address. The RPC providers, the dApp Store's
 public feed, and the sanctions-screening service the App contacts directly (section 5) are independent
 controllers of the requests they receive; Helius Labs, Solana Mobile Inc. and TRM Labs are established
 outside the EEA and their own privacy policies describe the safeguards they apply. The requests carry a
@@ -321,7 +328,7 @@ appreciate the chance to resolve it first.</p>
 <footer>
         <p>&copy; 2026 ADappvark. All rights reserved.</p>
         <p>Contact: <a href="mailto:aardappvark@proton.me">aardappvark@proton.me</a></p>
-        <p>Last updated: 7 October 2026</p>
+        <p>Last updated: 9 October 2026</p>
     </footer>
 </body>
 </html>
